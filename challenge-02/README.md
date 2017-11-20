@@ -5,17 +5,17 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
 function soma(x, y){
-    return (x + y);
+    return x + y;
 }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-soma(2 + 3);
+var mysoma = soma(2, 3) + 5;
 
 // Qual o valor atualizado dessa variável?
-5
+10
 
 // Declare uma nova variável, sem valor.
-var numeros;
+var newvar;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
@@ -23,16 +23,15 @@ Crie uma função que adicione um valor à variável criada acima, e retorne a s
 Onde VALOR é o novo valor da variável.
 */
 function adicionar(){
-    var numeros = 10;
-    var mensagem1 = 'O valor agora é: ';
-    return(mensagem1, numeros);
+    var newvar = 33;
+    return 'O valor da variável agora é: ', + newvar;
 }
 
 // Invoque a função criada acima.
-?
+adicionar()
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
+/* O valor da variável agora é: 33 */
 
 /*
 Crie uma função com as seguintes características:
@@ -41,10 +40,13 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function three(x, y, z){
+    if(x, y, z = 0) console.log('Preencha todos os valores corretamente!');
+
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+three(3 * 3)
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
 ?
