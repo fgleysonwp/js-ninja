@@ -84,6 +84,8 @@ function last(a, b, c) {
  }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
+last();
+false
 last(1);
 1
 last(1,2);
