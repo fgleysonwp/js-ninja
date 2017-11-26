@@ -24,7 +24,7 @@ var pessoa = {
     Altura: 1.75,
     peso: 70,
     andando: false,
-    caminhouQuantosMetros: 0;
+    caminhouQuantosMetros: 0
 }
 
 /*
@@ -48,62 +48,72 @@ booleano que representa "verdadeiro";
 */
 pessoa.andar = function(metros){
     pessoa.caminhouQuantosMetros += metros;
+    pessoa.andando = true;
 }
 
 /*
 Adicione um método ao objeto `pessoa` chamado `parar`, que irá modificar o valor
 da propriedade `andando` para o valor booleano que representa "falso".
 */
-?
+pessoa.parar = function(){
+    pessoa.andando = false;
+};
 
 /*
 Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
-?
+pessoa.nomeCompleto = function(){
+    return 'Olá!, meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+}
 
 /*
 Crie um método chamado `mostrarIdade`, que retorne a frase:
 - "Olá, eu tenho [IDADE] anos!"
 */
-?
+pessoa.mostrarIdade = function(){
+    return 'Olá, eu tenho ' + pessoa.idade + ' ' + 'anos!';
+}
 
 /*
 Crie um método chamado `mostrarPeso`, que retorne a frase:
 - "Eu peso [PESO]Kg."
 */
-?
+pessoa.mostrarPeso = function(){
+    return 'Eu peso ' + pessoa.peso + 'Kg.';
+}
 
 /*
 Crie um método chamado `mostrarAltura` que retorne a frase:
 - "Minha altura é [ALTURA]m."
 */
-?
-
+pessoa.altura = function(){
+    return 'Minha altura é ' + pessoa.altura + 'm.'
+}
 /*
 Agora vamos brincar um pouco com o objeto criado:
 Qual o nome completo da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.nomeCompleto() // "Olá!, meu nome é André Ferreira!"
 
 /*
 Qual a idade da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.mostrarIdade() // "Olá, eu tenho 23 anos!"
 
 /*
 Qual o peso da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.mostrarPeso() // "Eu peso 70Kg."
 
 /*
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-?
+pessoa.mostrarAltura() // "Minha altura é 1.75m."
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
