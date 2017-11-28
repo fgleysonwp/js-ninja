@@ -64,7 +64,7 @@ Crie um método chamado `nomeCompleto`, que retorne a frase:
 - "Olá! Meu nome é [NOME] [SOBRENOME]!"
 */
 pessoa.nomeCompleto = function(){
-    return 'Olá!, meu nome é ' + pessoa.nome + ' ' + pessoa.sobrenome + '!';
+    return pessoa.nome + ' ' + pessoa.sobrenome;
 }
 
 /*
@@ -165,6 +165,22 @@ Agora vamos deixar a brincadeira um pouco mais divertida! :D
 Crie um método para o objeto `pessoa` chamado `apresentacao`. Esse método deve
 retornar a string:
 - "Olá, eu sou o [NOME COMPLETO], tenho [IDADE] anos, [ALTURA], meu peso é [PESO] e, só hoje, eu já caminhei [CAMINHOU QUANTOS METROS] metros!"
+pessoa.apresentacao = function(){
+    var sexo = 'o';
+    var idadeAnos = 'Anos';
+    var metrosCaminhados = 'Metros';
+    if( pessoa.sexo === 'Feminino' ){
+        sexo = 'a';
+    }
+    if(pessoa.idade === 1) {
+        idadeAnos = Ano;
+    }
+    if(pessoa.caminhouQuantosMetros === 1){
+        metrosCaminhados = 'metro';
+    }
+        return 'Olá, eu sou ' + sexo + pessoa.nomeCompleto +', tenho ' + pessoa.idade + idadeAnos +', minha altura é + pessoa.altura +', meu peso é ' + pessoa.peso + ', só hoje, eu já caminhei' + pessoa.caminhouQuantosMetros + metrosCaminhados + '!';
+}
+
 
 Só que, antes de retornar a string, você vai fazer algumas validações:
 - Se o `sexo` de `pessoa` for "Feminino", a frase acima, no início da
