@@ -99,4 +99,4 @@ console.log('O autor do livro' + bookName + ' é ' + book(bookName).autor + '.')
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 */
-console.log('A editora do livro' + bookName + ' é ' + book(bookName).editora);
+console.log('A editora do livro' + bookName + ' é ' + book(bookName).editora + '.');
